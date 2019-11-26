@@ -1,0 +1,7 @@
+<resources>
+    <string name="font_name_opensans_regular">OpenSans-Regular.ttf</string>
+    <string name="font_name_opensans_semibold">OpenSans-Semibold.ttf</string>
+    <string name="font_name_titillium_semibold">TitilliumWeb-SemiBold.ttf</string>
+    <string name="font_name_titillium_regular">TitilliumWeb-Regular.ttf</string>
+    <string name="font_name_titillium_light">TitilliumWeb-Light.ttf</string>
+</resources>

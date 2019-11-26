@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidgeeks.hp.zoyme">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.ZoyMeSplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ZoyMeLoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="t4jsample"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ZoyMeHomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeRegistrationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeProductImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeProductListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeAddAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeReviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMePaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeMyAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeBuyerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeBussinesDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeBankDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeBuyerProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeBuyerOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeBuyerProductCreateActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.WebViewActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider2451032041789511"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.ZoyMeTermsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMePrivacyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZoyMeSubCategories"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

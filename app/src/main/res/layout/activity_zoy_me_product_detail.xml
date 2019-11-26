@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_top"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <include layout="@layout/appbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/viewpager_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.androidgeeks.hp.zoyme.helper.CustomViewPager
+                    android:id="@+id/mypanelproduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="visible"
+                    app:ci_drawable="@drawable/circleindicator_round" />
+
+
+            </FrameLayout>
+
+            <View
+                android:id="@+id/view_below_image"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="8dp"
+                android:singleLine="true"
+                android:text="Hood Jackets "
+                android:textColor="@color/name"
+                android:textSize="18dp" />
+
+
+            <RatingBar
+                android:id="@+id/rating_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:backgroundTint="#fff"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/colorAccent"
+                android:scaleX="0.8"
+                android:scaleY="0.7"
+                android:secondaryProgressTint="@color/colorAccent" />
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_description"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext">
+
+
+                    <com.androidgeeks.hp.zoyme.utils.BetterSpinner
+                        android:id="@+id/fragment_qty"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:hint="@string/spinner_qty"
+                        android:padding="15dp"
+                        android:textSize="14dp"
+                        app:font_name="@string/font_name_titillium_regular" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/ic_down_arrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/size_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext">
+
+
+                    <com.androidgeeks.hp.zoyme.utils.BetterSpinner
+                        android:id="@+id/fragment_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:hint="@string/spinner_size"
+                        android:padding="15dp"
+                        android:textSize="14dp"
+                        app:font_name="@string/font_name_titillium_regular" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/ic_down_arrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/color_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext">
+
+
+                    <com.androidgeeks.hp.zoyme.utils.BetterSpinner
+                        android:id="@+id/fragment_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@null"
+
+                        android:clickable="true"
+                        android:editable="false"
+                        android:hint="@string/spinner_color"
+                        android:padding="15dp"
+                        android:textSize="14dp"
+                        app:font_name="@string/font_name_titillium_regular" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/ic_down_arrow" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/description_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:id="@+id/product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:text="Hood Jackets "
+                android:textColor="@color/text_gray"
+                android:textSize="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_qty"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:weightSum="3">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Share"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <ImageButton
+                    android:id="@+id/facebook_share"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/facebook_icon" />
+
+
+                <ImageButton
+                    android:id="@+id/twitter_share"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/googleplus_icon" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:text="Price"
+            android:textAllCaps="false"
+            android:textColor="#FA7AAA"
+            android:textSize="18dp" />
+
+
+        <Button
+            android:id="@+id/buyno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/buycolor"
+            android:text="@string/Add_to_Cart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

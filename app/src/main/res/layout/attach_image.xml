@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <!--<ImageView
+        android:id="@+id/row_other_attachment_et_attach"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />-->
+
+
+    <com.androidgeeks.hp.zoyme.helper.CustomEditText
+        android:id="@+id/row_other_attachment_et_attach"
+        style="@style/FieldEditText"
+        android:drawablePadding="10dp"
+        android:drawableStart="@mipmap/ic_browse"
+        android:hint="@string/no_file_selected"
+        android:imeOptions="actionNext"
+        app:font_name="@string/font_name_titillium_regular"
+        android:drawableLeft="@mipmap/ic_browse" />
+
+
+</LinearLayout>

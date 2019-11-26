@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/zoyme_home"
+        android:icon="@mipmap/footer_home"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/zoyme_user"
+        android:icon="@mipmap/wishlist_bottom_icon"
+        android:title="Wishlist"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/zoyme_offers"
+        android:icon="@mipmap/footer_offers"
+        android:title="Offers"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/zoyme_cart"
+        android:icon="@mipmap/myorders_bottom_icon"
+        android:title="My Order"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/zoyme_more"
+        android:icon="@mipmap/footer_user"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+
+</menu>

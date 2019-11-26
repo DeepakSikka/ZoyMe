@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFF7FA</color>
+    <color name="colorPrimaryDark">#FF4081</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="cartbg">#ededed</color>
+    <color name="gradientcolor">#dddddd</color>
+    <color name="black">#000000</color>
+    <color name="name">#4B4B4B</color>
+    <color name="drawer">#2F2D2E</color>
+    <color name="logincolor">#7D7D7D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="signupcolor">#73DE43</color>
+    <color name="divider">#d1d1d1</color>
+    <color name="search">#FFA7A6A6</color>
+    <color name="text_gray">#838383</color>
+    <color name="gray">#E7E7E7</color>
+    <color name="buycolor">#F9076D</color>
+    <color name="edt_text_color">#5c5959</color>
+    <color name="primary_text">#212121</color>
+    <color name="your_color">#757575</color>
+
+
+    <color name="indicator_1">#55B3C2</color>
+    <color name="indicator_2">#64A4A4</color>
+    <color name="indicator_3">#66D7B9</color>
+    <color name="indicator_4">#FDBC7D</color>
+    <color name="my_awesome_color">#55B3C2</color>
+</resources>

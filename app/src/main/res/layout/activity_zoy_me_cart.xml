@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cartbg"
+    tools:context="com.androidgeeks.hp.zoyme.activity.ZoyMeCartActivity">
+
+
+    <include layout="@layout/appbar_payment" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/buycolor"
+            android:text="@string/select_address"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <ListView
+            android:id="@+id/cartList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp" />
+
+        <TextView
+            android:id="@+id/no_records"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/empty"
+            android:textColor="@color/text_gray"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buy_event"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/layout_bg"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:text="Price"
+            android:textAllCaps="false"
+            android:textColor="#FA7AAA"
+            android:textSize="18dp" />
+
+
+        <Button
+            android:id="@+id/continuecart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/buycolor"
+            android:text="Place Order"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

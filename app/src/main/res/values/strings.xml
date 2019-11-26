@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">ZoyMe</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="username">Username</string>
+    <string name="offers">Offers</string>
+    <string name="cart">Cart</string>
+    <string name="usernameoremail">Username or email</string>
+    <string name="mobile">Mobile No</string>
+    <string name="password">Password</string>
+    <string name="email">Email Id</string>
+    <string name="conform_password">Confirm Password</string>
+    <string name="login_with">Login with</string>
+    <string name="Dont_have_an_account">Don"'"t have an account</string>
+    <string name="Sign_up">Sign Up</string>
+    <string name="ok">Ok</string>
+    <string name="check_connection">Please check your connection!</string>
+    <string name="no_network_error">Internet is not connected</string>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+    <string name="account">Already have an account?</string>
+    <string name="buy">Buy Now</string>
+    <string name="Add_to_Cart">Add to Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="submit">Submit</string>
+    <string name="save">Save</string>
+    <string name="date">Date</string>
+    <string name="Continue">Continue</string>
+    <string name="address">Add Address</string>
+    <string name="select_address">Select Address</string>
+    <string name="logout">Logout</string>
+    <string name="description">Description</string>
+    <string name="search">Search for Products,brands and More</string>
+    <string name="Electronics">Electronics</string>
+    <string name="Fashion">Fashion</string>
+    <string name="Home_And_Furniture">Home And Furniture</string>
+    <string name="Tvs_And_Appliances">Tvs And Appliances</string>
+    <string name="Books_And_More">Books And More</string>
+    <string name="My_Account">My Account</string>
+    <string name="My_Cart">My Cart</string>
+    <string name="My_Orders">My Orders</string>
+    <string name="no_record">NO PRODUCTS LISTED IN THIS CATEGORY</string>
+    <string name="no_orders">NO ORDER LISTED </string>
+    <string name="no_review">NO REVIEW LISTED</string>
+    <string name="no_wishlist">NO PRODUCT FOUND IN YOUR WISHLIST</string>
+    <string name="empty">Your Cart is Empty</string>
+    <string name="priceDetail">Price Detail</string>
+    <string name="no_record_search">NO PRODUCTS FOUND</string>
+    <string name="Smart_Watches_Wearables">Smart Watches &amp; Wearables</string>
+    <string name="Mobile_Accessories">Mobile Accessories</string>
+    <string name="mobile_chld">Mobile</string>
+    <string name="spinner_qty">Qty</string>
+    <string name="spinner_size">Select Size</string>
+    <string name="spinner_color">Color</string>
+    <string name="no_record_found">No Record Found</string>
+    <string name="select_string">Select an item</string>
+    <string name="font">font/</string>
+    <string name="facebook_app_id">2451032041789511</string>
+    <string name="no_file_selected">No File Selected</string>
+    <string name="twitter_callback">http://zoyme.com/</string>
+    <string name="twitter_consumer_key">r3zNu0oWPIpnZvB34nCXEYSCx</string>
+    <string name="twitter_consumer_secret">sls4iRJffVN9TDd06NC7dMshufjhwHxfoOpj0O5dY4qxYuflbA</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Rs">\u20B9</string>
+    <string-array name="qty">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+</resources>

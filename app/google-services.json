@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "623346132461",
+    "firebase_url": "https://zoyme-bc69e.firebaseio.com",
+    "project_id": "zoyme-bc69e",
+    "storage_bucket": "zoyme-bc69e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623346132461:android:e4243ae2c6ec576e",
+        "android_client_info": {
+          "package_name": "com.androidgeeks.hp.zoyme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623346132461-ve577612tm6h4u600nbpp9c17ihklnoc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androidgeeks.hp.zoyme",
+            "certificate_hash": "11482d1fe6280baa81cab1b8481e9831cd6cda1a"
+          }
+        },
+        {
+          "client_id": "623346132461-p7qbacm4v0rja47f6sq4u7edm3o66sac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApG_ZtLlxmcXwv_7LN1RQ_FkD8hu6UFvs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623346132461-p7qbacm4v0rja47f6sq4u7edm3o66sac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

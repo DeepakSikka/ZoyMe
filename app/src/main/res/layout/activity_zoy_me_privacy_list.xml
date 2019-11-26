@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidgeeks.hp.zoyme.activity.ZoyMePrivacyListActivity">
+
+
+    <include layout="@layout/appbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Desktop apps usually have the EULA agreement (End-User License Agreement) instead of a Terms and Conditions agreement, but your business can use both. Mobile apps are increasingly using Terms and Conditions along with the EULA if the mobile app has an online service component, i.e. it connects with a server." />
+
+</RelativeLayout>

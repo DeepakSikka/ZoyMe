@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidgeeks.hp.zoyme.activity.ZoyMeOrderActivity">
+
+
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/appbar" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/orderList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/fragment_order_tv_no_records"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_orders"
+        android:textColor="@color/text_gray"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</android.support.constraint.ConstraintLayout>

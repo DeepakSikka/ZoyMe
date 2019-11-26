@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="font_name" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomRadioButton">
+        <attr name="radio_button_font" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomButton">
+        <attr name="button_text" format="string" />
+        <attr name="button_logo" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomProgress">
+        <attr name="pogressBGColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="progressStrokeWidth" format="dimension" />
+        <attr name="progressTimerInterval" format="integer" />
+        <attr name="progressIndeterminate" format="boolean" />
+        <attr name="progress" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomVLineGraph">
+        <attr name="graphColor" format="color" />
+        <attr name="graphStrokeWidth" format="dimension" />
+        <attr name="graphPadding" format="dimension" />
+        <attr name="graphProgress" format="integer" />
+        <attr name="graphNumberOfPillars" format="integer" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="trimLength" format="integer" />
+    </declare-styleable>
+
+
+</resources>
